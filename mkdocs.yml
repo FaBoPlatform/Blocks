@@ -1,0 +1,126 @@
+site_name: FaBo Blocks Docs For Raspberry pi pico
+theme:
+    name: material
+    custom_dir: 'theme'
+    language: 'ja'
+    font:
+      text: Noto Sans JP
+      code: Inconsolata
+    logo: 'logo.png'
+    favicon: 'favicon.png'
+
+    palette:
+      primary: 'red'
+      accent: 'pink'
+    features:
+      - navigation.top
+extra:
+    search:
+        language: 'jp'
+    homepage: https://www.fabo.io/
+markdown_extensions:
+  - fontawesome_markdown
+  - pymdownx.highlight:
+      use_pygments: true
+      noclasses: true
+      pygments_style: monokai
+      linenums: true
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.keys
+  - attr_list
+extra_css:
+  - "https://fonts.googleapis.com/earlyaccess/notosansjp.css"
+  - "https://fonts.googleapis.com/css?family=Open+Sans:600,800"
+  - "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"
+  - 'stylesheets/extra.css'
+  - "css/custom.css"
+nav:
+  - Home: "index.md"
+  - BOM:
+    - ベーシックセット: "01_セット内容の確認/01.bomBasicSet.md"
+    - スペシャルセット: "01_セット内容の確認/02.bomSpecialSet.md"
+  - 開発環境構築:
+    - Windows: "01_セット内容の確認/00.bom.md"
+    - Mac: "01_セット内容の確認/00.bom.md"
+    - Ubuntu: "01_セット内容の確認/00.bom.md"
+  - FaBoBrocksの説明:
+    - 使い方: "01_セット内容の確認/00.bom.md"
+  - Digital OUTPUT:
+    - LED: "03_ソースコード/LED/Arduino/led.md"
+    - FullColorLED: "01_セット内容の確認/00.bom.md"
+    - N20 MOTOR: "01_Ardino/00.bom.md"
+    - L9110 Fan: "01_Ardino/00.bom.md"
+    - RELAY: "01_Ardino/00.bom.md"
+    - Buzzer: "01_Ardino/00.bom.md"
+    - Vibration: "01_Ardino/00.bom.md"
+    - TEMT6000 Light: "01_Ardino/00.bom.md"
+    - IR Transmitter: "01_Ardino/00.bom.md"
+    - Dual LED: "01_Ardino/00.bom.md"
+    - SG-90 Servo: "01_Ardino/00.bom.md"
+  - Digital INPUT:
+    - Button: "01_Ardino/00.bom.md"
+    - Pressure: "01_Ardino/00.bom.md"
+    - RotaryEncorder: "01_Ardino/00.bom.md"
+    - Obstacle Detector: "01_Ardino/00.bom.md"
+    - Flame: "01_Ardino/00.bom.md"
+    - Photo Interrupter: "01_Ardino/00.bom.md"
+    - Hall: "01_Ardino/00.bom.md"
+    - Reed: "01_Ardino/00.bom.md"
+    - IR Reveiver: "01_Ardino/00.bom.md"
+    - CONTROL PAD: "01_Ardino/00.bom.md"
+    - DIGITAL TILT: "01_Ardino/00.bom.md"
+    - Crash: "01_Ardino/00.bom.md"
+    - Knock: "01_Ardino/00.bom.md"
+  - Analog INPUT:
+    - Potentionmeter: "01_Ardino/00.bom.md"
+    - Photocel: "01_Ardino/00.bom.md"
+    - LM35 Temp: "01_Ardino/00.bom.md"
+    - ANALOG Temp: "01_Ardino/00.bom.md"
+    - SliderPot: "01_Ardino/00.bom.md"
+    - MQ-2 Gas: "01_Ardino/00.bom.md"
+    - MQ-3 Alchol: "01_Ardino/00.bom.md"
+    - ADKeyBoard: "01_Ardino/00.bom.md"
+    - MicroPhone: "01_Ardino/00.bom.md"
+    - WaterSensor: "01_Ardino/00.bom.md"
+    - Sounds: "01_Ardino/00.bom.md"
+    - Steam Sensor: "01_Ardino/00.bom.md"
+    -  Thin-film Pressure Sensor: "01_Ardino/00.bom.md"
+  - I2C:
+    - ADXL345: "01_Ardino/00.bom.md"
+    - 4-Digit: "01_Ardino/00.bom.md"
+    - MicroPython: "01_Ardino/00.bom.md"
+    - OLED: "01_Ardino/00.bom.md"
+    - 1602LCD: "01_Ardino/00.bom.md"
+    - GasDetection BM688: "01_Ardino/00.bom.md"
+    - OLED: "01_Ardino/00.bom.md"
+    - PWM Driver: "01_Ardino/00.bom.md"
+    - DS3231 Clock: "01_Ardino/00.bom.md"
+    - BMP280 Altimeter: "01_Ardino/00.bom.md"
+  - SPI:
+    - M3008 Analog: "01_Ardino/00.bom.md"
+    - 2.8inchLCD: "01_Ardino/00.bom.md"
+    - DualMoter: "01_Ardino/00.bom.md"
+  - UART:
+    - LoRaWan: "01_Ardino/00.bom.md"
+    - USB Serial: "01_Ardino/00.bom.md"
+  - PDM:
+    - PDM Microphone: "01_Ardino/00.bom.md"
+    - USB Serial: "01_Ardino/00.bom.md"
+  - I2S:
+    - Stereo Mic: "01_Ardino/00.bom.md"
+    - Stereo Speaker: "01_Ardino/00.bom.md"
+  - ACCESARRY:
+    - Convertion Board Type F: "01_Ardino/00.bom.md"
+    - Convertion Board Type G: "01_Ardino/00.bom.md"
+extra_css:
+  - css/version-select.css
+  - css/extra.css
+  - css/custom.css
+  - https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css
+  - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css
+extra_javascript:
+  - javascripts/version-select.js
+  - javascripts/extra.js
+plugins:
+  - macros
