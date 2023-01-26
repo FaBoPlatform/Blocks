@@ -1,5 +1,10 @@
 # FaBo Blocks Docs For Raspberry pi pico
 
+
+##FaBo Blocks
+
+&emsp;RJ11ケーブルでセンサーを用いましてRaspberryPico,RaspberryPico Wと簡単接続します。ブレッドボードや半田接続を必要とせず。ブロックで固定でき授業や研修がとてもスムーズになります。
+
 ![Raspberry pi pico](./img/topPhoto.JPG)
 2023年発売予定
 
@@ -27,9 +32,11 @@ FaBo Blocks センサーセット　２０２３年発売予定
 
 ## 本ドキュメントでのセミナーの実施
 
-開催を予定しています。
+検討中でございます。
 
 ## 関連記事
+
+FaBoでは以下のAIに関する教材を販売しております。
 
 ## FaBo AI 教材
 - [JetRacer Docs](https://faboplatform.github.io/JetracerDocs/)

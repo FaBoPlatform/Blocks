@@ -2,6 +2,9 @@
 
 R11ケーブルで簡単接続。分解能 13 ビット、測定範囲 ±16g の小型、低電力、3 軸加速度計です。３つの方向XYZの加速度がわかります。
 
+Arduino スケッチー＞ライブラリをインクルードー＞ライブラリの管理からFaBoで検索しADXL３４５のライブラリをインストールします。
+
+
 ##Arduino
 
 ```c
@@ -25,3 +28,9 @@ void setup()
 }
 
 ```
+
+<br>
+<br>
+FaBoライブラリ
+[FaBo-3Axis-ADXL345-Library](https://github.com/FaBoPlatform/FaBo-3Axis-ADXL345-Library
+){:target="_blank"}
