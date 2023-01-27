@@ -3,7 +3,8 @@
 
 ##FaBo Blocks
 
-&emsp;RJ11ケーブルでセンサーを用いましてRaspberryPico,RaspberryPico Wと簡単接続します。ブレッドボードや半田接続を必要とせず。ブロックで固定でき授業や研修がとてもスムーズになります。
+&emsp;FaBoBrocksはセンサーを使ったIoTの学習とAI学習を目的としています。RJ11ケーブルでセンサーとのRaspberryPico,RaspberryPico Wを簡単接続します。ブレッドボードや半田接続を必要とせず。高い再現性を実現し、ねじなしでブロックにより固定できます。
+学習が捗り、授業や研修がとてもスムーズになるでしょう。
 
 ![Raspberry pi pico](./img/topPhoto.JPG)
 2023年発売予定
