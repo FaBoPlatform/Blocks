@@ -58,7 +58,7 @@ nav:
     - Vibration: "01_Ardino/00.bom.md"
     - TEMT6000 Light: "01_Ardino/00.bom.md"
     - IR Transmitter: "01_Ardino/00.bom.md"
-    - Dual LED: "01_Ardino/00.bom.md"
+    - Dual LED: "03_sourcecode/DigitalOUTPUT/DUALLED/KIDSBITS/Arduino/DUALLED.md"
     - SG-90 Servo: "01_Ardino/00.bom.md"
   - Digital INPUT:
     - Button: "01_Ardino/00.bom.md"
@@ -72,7 +72,7 @@ nav:
     - IR Reveiver: "01_Ardino/00.bom.md"
     - CONTROL PAD: "01_Ardino/00.bom.md"
     - DIGITAL TILT: "01_Ardino/00.bom.md"
-    - Crash: "01_Ardino/00.bom.md"
+    - Crash: "03_sourcecode/DigitalINPUT/CRASH/KIDSBITS/Arduino/crash.md"
     - Knock: "01_Ardino/00.bom.md"
   - Analog INPUT:
     - Potentionmeter: "03_sourcecode/AnalogInput/Potetionmeter/KIDSBITS/Arduino/Potetionmeter.md"
@@ -87,7 +87,7 @@ nav:
     - WaterSensor: "01_Ardino/00.bom.md"
     - Sounds: "01_Ardino/00.bom.md"
     - Steam Sensor: "01_Ardino/00.bom.md"
-    -  Thin-film Pressure Sensor: "01_Ardino/00.bom.md"
+    -  Thin-film Pressure Sensor: "03_sourcecode/AnalogInput/Thin-film_Pressure_Sensor/KIDSBITS/Arduino/Thin-filmPressureSensor.md"
   - I2C:
     - ADXL345: "03_sourcecode/ADXL345/KIDSBITS/Arduino/adxl345.md"
     - 4-Digit: "01_Ardino/00.bom.md"
