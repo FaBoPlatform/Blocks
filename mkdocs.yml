@@ -75,7 +75,7 @@ nav:
     - Crash: "01_Ardino/00.bom.md"
     - Knock: "01_Ardino/00.bom.md"
   - Analog INPUT:
-    - Potentionmeter: "01_Ardino/00.bom.md"
+    - Potentionmeter: "03_sourcecode/AnalogInput/Potetionmeter/KIDSBITS/Arduino/Potetionmeter.md"
     - Photocel: "01_Ardino/00.bom.md"
     - LM35 Temp: "03_sourcecode/AnalogInput/LM35/KIDSBITS/Arduino/LM35_Temp.md"
     - ANALOG Temp: "03_sourcecode/AnalogInput/AnalogTemp/KIDSBITS/Arduino/AnalogTemp.md"
@@ -97,7 +97,7 @@ nav:
     - GasDetection BM688: "01_Ardino/00.bom.md"
     - OLED: "01_Ardino/00.bom.md"
     - PWM Driver: "01_Ardino/00.bom.md"
-    - DS3231 Clock: "01_Ardino/00.bom.md"
+    - DS3231 Clock: "03_sourcecode/DS3231Clock/Arduino/DS3231.md"
     - BMP280 Altimeter: "01_Ardino/00.bom.md"
   - SPI:
     - M3008 Analog: "01_Ardino/00.bom.md"
