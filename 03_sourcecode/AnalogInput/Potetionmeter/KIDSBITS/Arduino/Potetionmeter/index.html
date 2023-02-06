@@ -1309,7 +1309,7 @@
   
     <li class="md-nav__item">
       <a href="../../../../../../01_Ardino/00.bom.md" class="md-nav__link">
-        DualMoter
+        DualMotor
       </a>
     </li>
   
@@ -1633,18 +1633,24 @@
 <span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">10</span>
 <span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">11</span>
 <span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">12</span>
-<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">13</span></pre></div></td><td class="code"><div><pre style="line-height: 125%;"><span></span><code><span style="color: #75715e">#define anglePin A0</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">13</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">14</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">15</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">16</span></pre></div></td><td class="code"><div><pre style="line-height: 125%;"><span></span><code><span style="color: #75715e">#define anglePin A0</span>
 <span style="color: #75715e">#define ledPin 2</span>
 
 <span style="color: #66d9ef">void</span><span style="color: #f8f8f2"> </span><span style="color: #a6e22e">setup</span><span style="color: #f8f8f2">() {</span>
 <span style="color: #f8f8f2">  pinMode(anglePin, INPUT);</span>
 <span style="color: #f8f8f2">  pinMode(ledPin, OUTPUT);</span>
+<span style="color: #f8f8f2">  Serial.begin(</span><span style="color: #ae81ff">115200</span><span style="color: #f8f8f2">);</span>
 <span style="color: #f8f8f2">}</span>
 
 <span style="color: #66d9ef">void</span><span style="color: #f8f8f2"> </span><span style="color: #a6e22e">loop</span><span style="color: #f8f8f2">() {</span>
 <span style="color: #f8f8f2">  </span><span style="color: #66d9ef">int</span><span style="color: #f8f8f2"> angleValue </span><span style="color: #f92672">=</span><span style="color: #f8f8f2"> analogRead(anglePin);</span>
 <span style="color: #f8f8f2">  </span><span style="color: #66d9ef">int</span><span style="color: #f8f8f2"> outputValue </span><span style="color: #f92672">=</span><span style="color: #f8f8f2"> map(angleValue, </span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">, </span><span style="color: #ae81ff">1023</span><span style="color: #f8f8f2">, </span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">, </span><span style="color: #ae81ff">255</span><span style="color: #f8f8f2">);</span>
+<span style="color: #f8f8f2">  Serial.println(angleValue);</span>
 <span style="color: #f8f8f2">  analogWrite(ledPin, outputValue);</span>
+<span style="color: #f8f8f2">  delay(</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">);</span>
 <span style="color: #f8f8f2">}</span>
 </code></pre></div></td></tr></table></div>
 
