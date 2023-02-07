@@ -104,8 +104,8 @@ nav:
     - BMP280 Altimeter: "01_Ardino/00.bom.md"
   - SPI:
     - M3008 Analog: "01_Ardino/00.bom.md"
-    - 2.8inchLCD: "01_Ardino/00.bom.md"
-    - DualMoter: "01_Ardino/00.bom.md"
+    - 2.8inchLCD: "03_sourcecode/SPI/TFT28SPI/FaBo350/Arduino/ILI9341.md"
+    - DualMotor: "01_Ardino/00.bom.md"
   - UART:
     - USB Serial: "03_sourcecode/USBSerial/F304/Arduino/USB_Serial.md"
     - LoRaWan: "01_Ardino/00.bom.md"

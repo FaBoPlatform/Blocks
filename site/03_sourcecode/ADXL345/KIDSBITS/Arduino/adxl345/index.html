@@ -1294,7 +1294,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../01_Ardino/00.bom.md" class="md-nav__link">
+      <a href="../../../../SPI/TFT28SPI/FaBo350/Arduino/ILI9341/" class="md-nav__link">
         2.8inchLCD
       </a>
     </li>
@@ -1309,7 +1309,7 @@
   
     <li class="md-nav__item">
       <a href="../../../../../01_Ardino/00.bom.md" class="md-nav__link">
-        DualMoter
+        DualMotor
       </a>
     </li>
   
@@ -1639,14 +1639,57 @@
 <span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">15</span>
 <span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">16</span>
 <span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">17</span>
-<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">18</span></pre></div></td><td class="code"><div><pre style="line-height: 125%;"><span></span><code><span style="color: #75715e">#include</span><span style="color: #f8f8f2"> </span><span style="color: #75715e">&lt;Wire.h&gt;</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">18</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">19</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">20</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">21</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">22</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">23</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">24</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">25</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">26</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">27</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">28</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">29</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">30</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">31</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">32</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">33</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">34</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">35</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">36</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">37</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">38</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">39</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">40</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">41</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">42</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">43</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">44</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">45</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">46</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">47</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">48</span></pre></div></td><td class="code"><div><pre style="line-height: 125%;"><span></span><code><span style="color: #75715e">/**</span>
+<span style="color: #75715e"> @file accelerometer.ino</span>
+<span style="color: #75715e"> @brief This is an Example for the FaBo 3AXIS I2C Brick.</span>
+
+<span style="color: #75715e">   http://fabo.io/201.html</span>
+
+<span style="color: #75715e">   Released under APACHE LICENSE, VERSION 2.0</span>
+
+<span style="color: #75715e">   http://www.apache.org/licenses/</span>
+
+<span style="color: #75715e"> @author FaBo&lt;info@fabo.io&gt;</span>
+<span style="color: #75715e">*/</span><span style="color: #f8f8f2"></span>
+
+<span style="color: #75715e">#include</span><span style="color: #f8f8f2"> </span><span style="color: #75715e">&lt;Wire.h&gt;</span>
 <span style="color: #75715e">#include</span><span style="color: #f8f8f2"> </span><span style="color: #75715e">&lt;FaBo3Axis_ADXL345.h&gt;</span>
 
 <span style="color: #f8f8f2">FaBo3Axis fabo3axis;</span>
 
 <span style="color: #66d9ef">void</span><span style="color: #f8f8f2"> </span><span style="color: #a6e22e">setup</span><span style="color: #f8f8f2">()</span>
 <span style="color: #f8f8f2">{</span>
-<span style="color: #f8f8f2">  Serial.begin(</span><span style="color: #ae81ff">115200</span><span style="color: #f8f8f2">); </span><span style="color: #75715e">// シリアルの開始デバック用</span>
+<span style="color: #f8f8f2">  Serial.begin(</span><span style="color: #ae81ff">9600</span><span style="color: #f8f8f2">); </span><span style="color: #75715e">// シリアルの開始デバック用</span>
 
 <span style="color: #f8f8f2">  Serial.println(</span><span style="color: #e6db74">&quot;Checking I2C device...&quot;</span><span style="color: #f8f8f2">);</span>
 
@@ -1656,6 +1699,23 @@
 <span style="color: #f8f8f2">  Serial.println(</span><span style="color: #e6db74">&quot;Init...&quot;</span><span style="color: #f8f8f2">);</span>
 <span style="color: #f8f8f2">  fabo3axis.configuration();</span>
 <span style="color: #f8f8f2">  fabo3axis.powerOn();</span>
+<span style="color: #f8f8f2">}</span>
+
+<span style="color: #66d9ef">void</span><span style="color: #f8f8f2"> </span><span style="color: #a6e22e">loop</span><span style="color: #f8f8f2">() {</span>
+<span style="color: #f8f8f2">  </span><span style="color: #66d9ef">int</span><span style="color: #f8f8f2"> x;</span>
+<span style="color: #f8f8f2">  </span><span style="color: #66d9ef">int</span><span style="color: #f8f8f2"> y;</span>
+<span style="color: #f8f8f2">  </span><span style="color: #66d9ef">int</span><span style="color: #f8f8f2"> z;</span>
+
+<span style="color: #f8f8f2">  fabo3axis.readXYZ(</span><span style="color: #f92672">&amp;</span><span style="color: #f8f8f2">x,</span><span style="color: #f92672">&amp;</span><span style="color: #f8f8f2">y,</span><span style="color: #f92672">&amp;</span><span style="color: #f8f8f2">z);</span>
+
+<span style="color: #f8f8f2">  Serial.print(</span><span style="color: #e6db74">&quot;x: &quot;</span><span style="color: #f8f8f2">);</span>
+<span style="color: #f8f8f2">  Serial.print(x);</span>
+<span style="color: #f8f8f2">  Serial.print(</span><span style="color: #e6db74">&quot;, y: &quot;</span><span style="color: #f8f8f2">);</span>
+<span style="color: #f8f8f2">  Serial.print(y);</span>
+<span style="color: #f8f8f2">  Serial.print(</span><span style="color: #e6db74">&quot;, z: &quot;</span><span style="color: #f8f8f2">);</span>
+<span style="color: #f8f8f2">  Serial.println(z);</span>
+
+<span style="color: #f8f8f2">  delay(</span><span style="color: #ae81ff">1000</span><span style="color: #f8f8f2">);</span>
 <span style="color: #f8f8f2">}</span>
 </code></pre></div></td></tr></table></div>
 <p><br>
